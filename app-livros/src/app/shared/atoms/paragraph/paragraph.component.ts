@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-paragraph',
+  imports: [],
+  template: `
+    <p>
+      paragraph works!
+    </p>
+  `,
+  styles: ``
+})
+export class ParagraphComponent {
+
+}
