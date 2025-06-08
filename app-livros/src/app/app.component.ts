@@ -1,16 +1,14 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
   template: `
-    <h1 class="text-pink-600 text-9xl">Boas vindas a {{title}}!</h1>
-
     <router-outlet />
   `,
   styles: [],
 })
 export class AppComponent {
-  title = 'BookStore';
+
 }

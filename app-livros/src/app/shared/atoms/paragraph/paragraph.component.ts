@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-paragraph',
+  standalone: true,
   imports: [],
   template: `
-    <p>
-      paragraph works!
+    <p class="text-sm font-light">
+      {{ description }}: {{ value }}
     </p>
   `,
   styles: ``
 })
 export class ParagraphComponent {
-
+  @Input() description = '';
+  @Input() value = '';
 }
